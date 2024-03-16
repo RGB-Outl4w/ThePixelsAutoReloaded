@@ -33,7 +33,7 @@
 
 // Find the button element by its class name
 // const button = document.querySelector('.BlackButtonStyled-sc-155f8n4-0.bXMZJW'); 
-const button = document.querySelector('.BlackButtonStyled-sc-155f8n4-0 gvlQbP');
+const button = document.querySelector('BlackButtonStyled-sc-155f8n4-0 gvlQbP');
 
 // Function to click the button
 function clickButton() {
