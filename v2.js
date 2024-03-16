@@ -4,5 +4,8 @@ setInterval(function() {
     if (elements[i].innerText == 'Закрасить') {
       elements[i].click();
     }
+    if (elements[i].innerText == 'Push Pixel') {
+      elements[i].click();
+    }
   }
 }, 500);
