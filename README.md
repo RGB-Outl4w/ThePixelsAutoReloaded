@@ -1,6 +1,6 @@
 # ThePixelsAuto
 ![ThePixelsLogo](https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FmeaTxrGmWq8Yt_3FTIsoH.png&w=3840&q=75)
-This repository serves as a storage (and a hosting) for a Javascript script that will automatically "Push Pixels" for you.
+  **This repository serves as a storage (and a hosting) for a Javascript script that will automatically "Push Pixels" for you. Decided to make it open-souce unlike the previous ones, cuz, why not? At least for now...**
 
 ## What this script does:
 * Clicks the button "Push Pixels"
