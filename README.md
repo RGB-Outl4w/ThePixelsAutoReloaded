@@ -16,4 +16,5 @@
 ### A: Because the other ones are not profitable. The 2x boost can give you around 120-130% of its price back, while 3x is just nice. And it doesn't cost much. So why not?
 
 # Known Issues
-* Sometimes the script can buy multiple boosts instead of just one (not intended)
+* ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
+* [v3.1] Sometimes the script can buy multiple of the same boosts instead of just one
