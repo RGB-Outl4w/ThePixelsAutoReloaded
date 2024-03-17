@@ -17,4 +17,5 @@
 
 # Known Issues
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
-* [v3.1] Sometimes the script can buy multiple of the same boosts instead of just one
+* [v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution
+ + Quick fix: After the first boost is bought on script execution and the shop is opened again, quickly close the shop so the second boost isn't bought.
