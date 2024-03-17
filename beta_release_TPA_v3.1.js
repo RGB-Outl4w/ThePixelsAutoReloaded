@@ -32,7 +32,7 @@ async function checkAndUpdate() {
           }
         } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1]) {
             document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
-            await wait(2500);
+            await wait(250);
         } else {
             await wait(250);
         }
