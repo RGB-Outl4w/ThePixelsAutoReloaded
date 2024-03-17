@@ -19,21 +19,25 @@ async function checkAndUpdate() {
                 document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
                 await wait(3500);
                 console.log(1);
-              } else if (newmoney >= 1050) {
+              }
+              else if (newmoney >= 1050) {
                 document.querySelector("a[href=\"/shop\"]").click();
                 await wait(2500);
                 document.querySelector("a[href=\"/shop/0\"]").click();
                 await wait(2500);
                 document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
-              } else {
+              }
+              else {
                 document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
               }
             }
           }
-        } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1]) {
+        }
+        else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1]) {
             document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
             await wait(250);
-        } else {
+        }
+        else {
             await wait(250);
         }
       }, 500);
