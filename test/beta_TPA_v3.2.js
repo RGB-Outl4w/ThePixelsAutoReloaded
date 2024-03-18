@@ -5,10 +5,10 @@
 
 async function checkAndUpdate() {
     const elementSelectors = {
-        blackButton: ".BlackButtonStyled-sc", 
-        timeElement: ".Time-sc-", 
-        animatedNumber: ".AnimatedNumberStyled-sc", 
-        targetProgress: ".TargetProgressSquad-sc", 
+        blackButton: "[class^=\"BlackButtonStyled-sc\"]", 
+        timeElement: "[class^=\"Time-sc-\"]", 
+        animatedNumber: "[class^=\"AnimatedNumberStyled-sc\"]", 
+        targetProgress: "[class^=\"TargetProgressSquad-sc\"]", 
         shopButton1: "a[href=\"/shop/1\"]", 
         shopButton: "a[href=\"/shop\"]", 
         shopButton0: "a[href=\"/shop/0\"]", 
