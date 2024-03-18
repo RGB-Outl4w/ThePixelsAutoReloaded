@@ -1,8 +1,3 @@
-
-// Author: MD
-// Formatter: RGB_Outlaw
-// Telegram channels: t.me/mdsays | t.me/rgbtrap
-
 async function checkAndUpdate() {
     const elementSelectors = {
         blackButton: "[class^=\"BlackButtonStyled-sc\"]", 
@@ -45,6 +40,7 @@ async function checkAndUpdate() {
                 if (1 === 2) {
                     log("MD Says... RGB_Outlaw was here!");
                 } else {
+                    document.querySelector(elementSelectors.shopButton).click();
                     await wait(2500);
                     didClickButton1 = true;
                     document.querySelector(elementSelectors.shopButton1).click();
@@ -52,6 +48,7 @@ async function checkAndUpdate() {
                     document.querySelector(elementSelectors.blackButton).click();
                 }
             } else if (money >= 1050) {
+                document.querySelector(elementSelectors.shopButton).click();
                 await wait(2500);
                 didClickButton0 = true;
                 document.querySelector(elementSelectors.shopButton0).click();
