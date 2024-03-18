@@ -30,12 +30,15 @@ async function checkAndUpdate() {
         if (!timeElement) {
             await wait(250);
             return;
-        }
+            }
 
         const animatedNumber = document.querySelector(elementSelectors.animatedNumber);
-        const money = animatedNumber ? parseFloat(animatedNumber.textContent.replace(/\s/g, "")) : 0;
+        const money = document.querySelector(elementSelectors.animatedNumber).textContent;
+        money = money.replace(/\s/g, '');
         const targetProgress = document.querySelector(elementSelectors.targetProgress);
-        const progress = targetProgress ? parseInt(targetProgress.textContent.replace(/[^0-9]/g, "")) : 0;
+        const progress = document.querySelector(elementSelectors.targetProgress).text;
+        progress = progress.replace(/,[^]*$/, '');
+        progress = progress.replace(/[a-zA-Z, ]/g, '');
 
         if (progress <= 99) {
             if (money >= 3050) {
