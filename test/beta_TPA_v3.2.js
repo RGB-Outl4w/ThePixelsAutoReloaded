@@ -27,7 +27,7 @@ async function checkAndUpdate() {
             return;
             }
 
-        animatedNumber = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]");
+        if (animatedNumber = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]")) {
         money = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]").textContent;
         money = money.replace(/\s/g, '');
         targetProgress = document.querySelector("[class^=\"TargetProgressSquad-sc\"]");
@@ -54,14 +54,15 @@ async function checkAndUpdate() {
                     document.querySelector("a[href=\"/shop/0\"]").click();
                     await wait(3500);
                     document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
-
-                } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
-                    document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
-                    await wait(250);
-
-                } else {
-                    await wait(250);
                 }
+
+            } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
+                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
+                await wait(250);
+
+            } else {
+                await wait(250);
+            }
             }
         }
     }, 5000);
