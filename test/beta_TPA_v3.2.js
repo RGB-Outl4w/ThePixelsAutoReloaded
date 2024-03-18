@@ -54,6 +54,11 @@ async function checkAndUpdate() {
                 document.querySelector(elementSelectors.shopButton0).click();
                 await wait(3500);
                 document.querySelector(elementSelectors.blackButton).click();
+            } else if (document.querySelectorAll(elementSelectors.blackButton)) {
+                document.querySelectorAll(elementSelectors.blackButton).click();
+                await wait(250);
+            } else {
+                await wait(250);
             }
         }
     }, 5000);
