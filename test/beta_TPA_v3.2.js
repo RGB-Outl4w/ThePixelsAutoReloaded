@@ -23,7 +23,7 @@ async function checkAndUpdate() {
     try {
     setInterval(async function() {
         //const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
-        
+
         //if (!timeElement) {
         //    await wait(250);
         //    return;
@@ -56,6 +56,10 @@ async function checkAndUpdate() {
                     document.querySelector("a[href=\"/shop/0\"]").click();
                     await wait(3500);
                     document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+                    
+                } else {
+                    document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
+                    await wait(250);
                 }
 
             } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
