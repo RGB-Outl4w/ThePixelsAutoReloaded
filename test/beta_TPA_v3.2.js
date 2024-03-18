@@ -21,7 +21,7 @@ async function checkAndUpdate() {
     let didClickButton0 = false;
 
     setInterval(async function() {
-        const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
+        //const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
         if (!timeElement) {
             await wait(250);
             return;
@@ -34,30 +34,34 @@ async function checkAndUpdate() {
         progress = document.querySelector("[class^=\"TargetProgressSquad-sc\"]").text;
         progress = progress.replace(/,[^]*$/, '');
         progress = progress.replace(/[a-zA-Z, ]/g, '');
+        
+        element = document.querySelector("[class^=\"Time-sc-\"]");
+        if (element === undefined || element === null || element === '') {
+          await wait(250);
+            if (progress <= 99) {
+                if (money >= 3050) {
+                    document.querySelector("a[href=\"/shop\"]").click();
+                    await wait(2500);
+                    didClickButton1 = true;
+                    document.querySelector("a[href=\"/shop/1\"]").click();
+                    await wait(3500);
+                    document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
 
-        if (progress <= 99) {
-            if (money >= 3050) {
-                document.querySelector("a[href=\"/shop\"]").click();
-                await wait(2500);
-                didClickButton1 = true;
-                document.querySelector("a[href=\"/shop/1\"]").click();
-                await wait(3500);
-                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+                } else if (money >= 1050) {
+                    document.querySelector("a[href=\"/shop\"]").click();
+                    await wait(2500);
+                    didClickButton0 = true;
+                    document.querySelector("a[href=\"/shop/0\"]").click();
+                    await wait(3500);
+                    document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
 
-            } else if (money >= 1050) {
-                document.querySelector("a[href=\"/shop\"]").click();
-                await wait(2500);
-                didClickButton0 = true;
-                document.querySelector("a[href=\"/shop/0\"]").click();
-                await wait(3500);
-                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+                } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
+                    document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
+                    await wait(250);
 
-            } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
-                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
-                await wait(250);
-
-            } else {
-                await wait(250);
+                } else {
+                    await wait(250);
+                }
             }
         }
     }, 5000);
