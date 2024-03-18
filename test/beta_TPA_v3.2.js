@@ -3,7 +3,6 @@
 // Formatter: RGB_Outlaw
 // Telegram channels: t.me/mdsays | t.me/rgbtrap
 
-
 async function checkAndUpdate() {
     // This function repeatedly checks the game state and performs actions based on conditions
 
@@ -70,10 +69,27 @@ async function checkAndUpdate() {
                     }
                 }
             } else if (money >= 1050) { // Check if money is sufficient for purchasing a double boost
-                document.querySelector(elementSelectors.shopButton).click();
-                await wait(2500);
-                document.querySelector(elementSelectors.shopButton0).click();
-                log("Buying something from the shop...");
+                const actions = ["wait2500", "setDidClickButton0", "clickShopButton0", "wait3500", "clickBlackButton"];
+                for (let i = 0; i < actions.length; i++) {
+                    const action = actions[i];
+                    switch (action) {
+                        case "wait2500":
+                            await wait(2500); // Wait for 2.5 seconds
+                            break;
+                        case "setDidClickButton0":
+                            didClickButton0 = true; // Potentially unused flag
+                            break;
+                        case "clickShopButton0":
+                            document.querySelector(elementSelectors.shopButton0).click();
+                            break;
+                        case "wait3500":
+                            await wait(3500); // Wait for 3.5 seconds
+                            break;
+                        case "clickBlackButton":
+                            document.querySelector(elementSelectors.blackButton).click();
+                            break;
+                    }
+                }
             }
         }
     }, 5000); // Set the interval to check the game state every 5 seconds
