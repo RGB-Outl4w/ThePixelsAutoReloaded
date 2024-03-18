@@ -21,42 +21,41 @@ async function checkAndUpdate() {
     let didClickButton0 = false;
 
     setInterval(async function() {
-        const timeElement = document.querySelector(elementSelectors.timeElement);
+        const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
         if (!timeElement) {
             await wait(250);
             return;
             }
 
-        const animatedNumber = document.querySelector(elementSelectors.animatedNumber);
-        const money = document.querySelector(elementSelectors.animatedNumber).textContent;
+        animatedNumber = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]");
+        money = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]").textContent;
         money = money.replace(/\s/g, '');
-        const targetProgress = document.querySelector(elementSelectors.targetProgress);
-        const progress = document.querySelector(elementSelectors.targetProgress).text;
+        targetProgress = document.querySelector("[class^=\"TargetProgressSquad-sc\"]");
+        progress = document.querySelector("[class^=\"TargetProgressSquad-sc\"]").text;
         progress = progress.replace(/,[^]*$/, '');
         progress = progress.replace(/[a-zA-Z, ]/g, '');
 
         if (progress <= 99) {
             if (money >= 3050) {
-                if (1 === 2) {
-                    log("MD Says... RGB_Outlaw was here!");
-                } else {
-                    document.querySelector(elementSelectors.shopButton).click();
-                    await wait(2500);
-                    didClickButton1 = true;
-                    document.querySelector(elementSelectors.shopButton1).click();
-                    await wait(3500);
-                    document.querySelector(elementSelectors.blackButton).click();
-                }
+                document.querySelector("a[href=\"/shop\"]").click();
+                await wait(2500);
+                didClickButton1 = true;
+                document.querySelector("a[href=\"/shop/1\"]").click();
+                await wait(3500);
+                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+
             } else if (money >= 1050) {
-                document.querySelector(elementSelectors.shopButton).click();
+                document.querySelector("a[href=\"/shop\"]").click();
                 await wait(2500);
                 didClickButton0 = true;
-                document.querySelector(elementSelectors.shopButton0).click();
+                document.querySelector("a[href=\"/shop/0\"]").click();
                 await wait(3500);
-                document.querySelector(elementSelectors.blackButton).click();
-            } else if (document.querySelectorAll(elementSelectors.blackButton)) {
-                document.querySelectorAll(elementSelectors.blackButton).click();
+                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+
+            } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")) {
+                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
                 await wait(250);
+
             } else {
                 await wait(250);
             }
