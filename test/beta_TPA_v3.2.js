@@ -1,7 +1,7 @@
 async function checkAndUpdate() {
     const elementSelectors = {
         blackButton: "[class^=\"BlackButtonStyled-sc\"]", 
-        timeElement: "[class^=\"Time-sc-\"]", 
+        //timeElement: "[class^=\"Time-sc-\"]", 
         animatedNumber: "[class^=\"AnimatedNumberStyled-sc\"]", 
         targetProgress: "[class^=\"TargetProgressSquad-sc\"]", 
         shopButton1: "a[href=\"/shop/1\"]", 
@@ -23,10 +23,11 @@ async function checkAndUpdate() {
     try {
     setInterval(async function() {
         //const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
-        if (!timeElement) {
-            await wait(250);
-            return;
-            }
+        
+        //if (!timeElement) {
+        //    await wait(250);
+        //    return;
+        //    }
 
         if (animatedNumber = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]")) {
         money = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]").textContent;
