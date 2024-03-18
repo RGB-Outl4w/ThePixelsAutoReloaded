@@ -1,6 +1,6 @@
 # ThePixelsAuto
 ![ThePixelsLogo](https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FmeaTxrGmWq8Yt_3FTIsoH.png&w=3840&q=75)
-  **This repository serves as a storage (and a hosting) for a Javascript script that will automatically "Push Pixels" for you. Decided to make it open-souce unlike the previous ones, cuz, why not? At least for now...**
+  **This repository serves as a storage for Javascript scripts that will automatically "Push Pixels" for you.**
 
 ## What this script does:
 * Clicks the button "Push Pixels"
@@ -17,5 +17,5 @@
 
 # Known Issues
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
-* [v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution
-   - Quick fix: After the first boost is bought on script execution and the shop is opened again, quickly close the shop so the second boost isn't bought.
+* ~~[v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution~~ (Fixed in v3.2)
+   ~~- Quick fix: After the first boost is bought on script execution and the shop is opened again, quickly close the shop so the second boost isn't bought.~~
