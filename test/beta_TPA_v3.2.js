@@ -20,6 +20,7 @@ async function checkAndUpdate() {
     let didClickButton1 = false;
     let didClickButton0 = false;
 
+    try {
     setInterval(async function() {
         //const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
         if (!timeElement) {
@@ -66,6 +67,7 @@ async function checkAndUpdate() {
             }
         }
     }, 5000);
+} catch (error) {}
 }
 
 checkAndUpdate();
