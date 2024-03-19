@@ -24,7 +24,7 @@ async function checkAndUpdate() {
                 await wait(2500);
                 document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
                 await wait(3500);
-                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
+                //document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
             } else if (newmoney >= 1050) {
                 await wait(2500);
                 document.querySelector("a[href=\"/shop\"]").click();
@@ -34,7 +34,7 @@ async function checkAndUpdate() {
                 await wait(2500);
                 document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
                 await wait(3500);
-                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
+                //document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]").click();
             } else {
                 document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
               }
