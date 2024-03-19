@@ -2,6 +2,9 @@
 ![ThePixelsLogo](https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FmeaTxrGmWq8Yt_3FTIsoH.png&w=3840&q=75)
   **This repository serves as a storage for Javascript scripts that will automatically "Push Pixels" for you.**
 
+# ⚠️ ATTENTION ⚠️
+Devs have stated that using an autoclicker OR a similar script is not safe! This probably means that those are now bannable. Use at your own risk.
+
 ## What this script does:
 * Clicks the button "Push Pixels"
 * When your balance eventually reaches 1000 coins, it buys a double pixel upgrade
