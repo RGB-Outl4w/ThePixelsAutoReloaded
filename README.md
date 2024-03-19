@@ -5,6 +5,12 @@
 # ⚠️ ATTENTION ⚠️
 Devs have stated that using an autoclicker OR a similar script is not safe! This probably means that those are now bannable. Use at your own risk.
 
+## Installation (Execution):
+Paste the following command into the Telegram webview console (Ctrl + Shift + i -- to open):
+~~`fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/beta_TPA_v3.2.js').then(response => response.text()).then(script => eval(script));`~~
+## OR
+`fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/experimental_TPA_v3.2.1.js').then(response => response.text()).then(script => eval(script));`
+
 ## What this script does:
 * Clicks the button "Push Pixels"
 * When your balance eventually reaches 1000 coins, it buys a double pixel upgrade
@@ -21,4 +27,3 @@ Devs have stated that using an autoclicker OR a similar script is not safe! This
 # Known Issues
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
 * ~~[v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution~~ (Fixed in v3.2)
-   ~~- Quick fix: After the first boost is bought on script execution and the shop is opened again, quickly close the shop so the second boost isn't bought.~~
