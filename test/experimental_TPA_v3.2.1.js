@@ -16,25 +16,27 @@ async function checkAndUpdate() {
             comp = comp.replace(/[a-zA-Z, ]/g, '');
             if (comp <= 99) {
               if (newmoney >= 3050) {
-                    await wait(2500);
-                    document.querySelector("a[href=\"/shop\"]").click();
-                    await wait(2500);
-                    didClickButton1 = true;
-                    document.querySelector("a[href=\"/shop/1\"]").click();
-                    await wait(2500);
-                    document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
-                    await wait(3500);
-                    console.log(1);
-              } else if (newmoney >= 1050) {
-                    await wait(2500);
-                    document.querySelector("a[href=\"/shop\"]").click();
-                    await wait(2500);
-                    didClickButton0 = true;
-                    document.querySelector("a[href=\"/shop/0\"]").click();
-                    await wait(2500);
-                    document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
-              } else {
-                    document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
+                await wait(2500);
+                document.querySelector("a[href=\"/shop\"]").click();
+                await wait(2500);
+                didClickButton1 = true;
+                document.querySelector("a[href=\"/shop/1\"]").click();
+                await wait(2500);
+                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+                await wait(3500);
+                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
+            } else if (newmoney >= 1050) {
+                await wait(2500);
+                document.querySelector("a[href=\"/shop\"]").click();
+                await wait(2500);
+                didClickButton0 = true;
+                document.querySelector("a[href=\"/shop/0\"]").click();
+                await wait(2500);
+                document.querySelector("[class^=\"BlackButtonStyled-sc\"]").click();
+                await wait(3500);
+                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
+            } else {
+                document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
               }
             }
           }
