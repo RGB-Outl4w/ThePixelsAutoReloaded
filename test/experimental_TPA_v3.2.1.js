@@ -41,6 +41,7 @@ async function checkAndUpdate() {
             }
           }
         } else if (document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1]) {
+            await wait(250);
             document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1].click();
             await wait(250);
         } else {
