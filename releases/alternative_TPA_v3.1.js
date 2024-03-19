@@ -5,8 +5,6 @@ async function checkAndUpdate() {
         if (element === undefined || element === null || element === '') {
           await wait(250);
           if (document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]")) {
-            money = document.querySelector("[class^=\"AnimatedNumberStyled-sc\"]").textContent;
-            newmoney = money.replace(/\s/g, '');
             comp = document.querySelector("[class^=\"TargetProgressSquad-sc\"]").text;
             comp = comp.replace(/,[^]*$/, '');
             comp = comp.replace(/[a-zA-Z, ]/g, '');
