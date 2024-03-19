@@ -7,9 +7,10 @@ Devs have stated that using an autoclicker OR a similar script is not safe! This
 
 ## Installation (Execution):
 Paste the following command into the Telegram webview console (Ctrl + Shift + i -- to open):
-~~`fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/beta_TPA_v3.2.js').then(response => response.text()).then(script => eval(script));`~~
+
+~~```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/beta_TPA_v3.2.js').then(response => response.text()).then(script => eval(script));```~~
 ## OR
-`fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/experimental_TPA_v3.2.1.js').then(response => response.text()).then(script => eval(script));`
+```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/experimental_TPA_v3.2.1.js').then(response => response.text()).then(script => eval(script));```
 
 ## What this script does:
 * Clicks the button "Push Pixels"
