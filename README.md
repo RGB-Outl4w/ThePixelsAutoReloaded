@@ -29,3 +29,4 @@ _(for a straight launch)_
 # Known Issues
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
 * ~~[v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution~~ (Fixed in v3.2)
+*   [v4.0] Script can randomly give an error and stop working until you click OK in the pop-up window
