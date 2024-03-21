@@ -32,7 +32,4 @@ async function checkAndUpdate() {
   
   const metax = 1077,
   
-  elements = document.querySelectorAll("[class^=\'PieChartStyled-sc\']");
-  elements = elements.textContent.replace(/(\d{1,2},\d{2}|\d{3})% >/, '');
-  
   checkAndUpdate();
