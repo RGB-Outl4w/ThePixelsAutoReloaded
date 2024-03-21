@@ -1,7 +1,7 @@
 
 
 async function checkAndUpdate() {
-  const element = document.querySelector('[class^="BlackButtonStyled-sc"]');
+  const element = document.querySelector('[class^="BlackButtonStyled-sc"]')[1];
 
   if (element) {
     element.click();
