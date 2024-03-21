@@ -5,16 +5,8 @@ async function checkAndUpdate() {
 
   if (element) {
     element.click();
-    await wait(1000);
+    await wait(3000);
 
-    const searchText = "Next";
-    const textOnPage = document.body.textContent;
-
-    if (!textOnPage.includes(searchText)) {
-      await wait(5000);
-    }
-  } else {
-    await wait(2000);
   }
 }
 
