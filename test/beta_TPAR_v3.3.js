@@ -19,7 +19,6 @@ async function checkAndUpdate() {
         await wait(1000);
       }
     }
-  }
   
   function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
