@@ -2,23 +2,20 @@ async function checkAndUpdate() {
     let element = document.querySelector("[class^=\'BlackButtonStyled-sc\']");
     let count = 0;
   
-    while (true) {
-      if (count > 10) {
-        break;
-      }
-  
       if (element) {
         element.click();
         count = 0;
         await wait(2000);
   
-        let searchText = "magasan";
+        let searchText = "MD Says";
         let textOnPage = document.body.textContent;
   
         if (!textOnPage.includes(searchText)) {
-          await wait(5000);
+          await wait(1000);
         }
-      } else {
+      } else if (textOnPage.includes(searchText)) {
+          await wait(1000);
+        } else {
         await wait(1000);
       }
     }
