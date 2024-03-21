@@ -45,7 +45,8 @@ async function checkAndUpdate() {
                 await wait(2500);
                 attempt = 1;
                 lastShopVisit = Date.now() + 200; // Update last shop visit time
-               await wait(1500);
+                document.querySelector("[class^='BlackButtonStyled-sc']")[1].click();
+                await wait(1500);
               } else if (newmoney >= 1050) {
                 // Buy shop item 0
                 lastShopVisit = Date.now() + 180;
