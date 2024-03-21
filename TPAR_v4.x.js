@@ -54,9 +54,10 @@ async function checkAndUpdate() {
                 document.querySelector("a[href='/shop/0']").click();
                 await wait(2500);
                 document.querySelector("[class^='BlackButtonStyled-sc']").click();
+                await wait(2500);
                 attempt = 1;
-                document.querySelector("[class^='BlackButtonStyled-sc']")[1].click();
                 lastShopVisit = Date.now() + 200; // Update last shop visit time
+                document.querySelector("[class^='BlackButtonStyled-sc']")[1].click();
                 await wait(2500);
               } else {
                 // Not enough money, click the other button
