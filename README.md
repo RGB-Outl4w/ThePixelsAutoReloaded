@@ -9,9 +9,6 @@ Devs have recently stated that using an autoclicker OR a similar script is not s
 Paste the following command into the Telegram webview console (Ctrl + Shift + i -- to open):
 
 ```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js').then(response => response.text()).then(script => eval(script));```
-**OR**
-```https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.0.js```
-_(for a straight launch)_
 
 ## What this script does:
 * Clicks the button "Push Pixels"
