@@ -1,16 +1,17 @@
-# ThePixelsAuto
+# ThePixelsAuto: Reloaded
 ![ThePixelsLogo](https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FmeaTxrGmWq8Yt_3FTIsoH.png&w=3840&q=75)
   **This repository serves as a storage for Javascript scripts that will automatically "Push Pixels" for you.**
 
 # ⚠️ ATTENTION ⚠️
-Devs have stated that using an autoclicker OR a similar script is not safe! This probably means that those are now bannable. Use at your own risk.
+Devs have recently stated that using an autoclicker OR a similar script is not safe! This probably means that those are now bannable. Use at your own risk.
 
 ## Installation (Execution):
 Paste the following command into the Telegram webview console (Ctrl + Shift + i -- to open):
 
-```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/beta_TPA_v3.2.js').then(response => response.text()).then(script => eval(script));```
-## OR
-```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAuto/main/test/experimental_TPA_v3.2.1.js').then(response => response.text()).then(script => eval(script));```
+```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js').then(response => response.text()).then(script => eval(script));```
+**OR**
+```https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.0.js```
+_(for a straight launch)_
 
 ## What this script does:
 * Clicks the button "Push Pixels"
