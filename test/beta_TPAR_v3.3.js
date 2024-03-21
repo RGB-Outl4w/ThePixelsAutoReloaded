@@ -28,8 +28,4 @@ async function checkAndUpdate() {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
   
-  window.alert = function() {}, window.confirm.toString = function() {};
-  
-  const metax = 1077,
-  
   checkAndUpdate();
