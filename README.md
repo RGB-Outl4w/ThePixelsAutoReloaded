@@ -10,10 +10,14 @@ Paste the following command into the Telegram webview console (Ctrl + Shift + i 
 
 ```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js').then(response => response.text()).then(script => eval(script));```
 
+* (it is recommended to add "?123" after "...main.js" time to time to clear the cache, your link will look like: "..._main.js?123")
+
 ## What this script does:
+* Bypasses PC block by devs
 * Clicks the button "Push Pixels"
-* When your balance eventually reaches 1000 coins, it buys a double pixel upgrade
-* When your balance eventually reaches 3000 coins (double pixel is profitable), it buys a triple pixel upgrade
+* Blocks annoying ad pop-ups mid-game
+* ~~When your balance eventually reaches 1000 coins, it buys a double pixel upgrade~~ (removed in main script, still in /releases/)
+* ~~When your balance eventually reaches 3000 coins (double pixel is profitable), it buys a triple pixel upgrade~~ (removed in main script, still in /releases/)
 
 # FAQ
 
