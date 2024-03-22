@@ -91,5 +91,5 @@
   document.head.appendChild(s);
 
   setTimeout(function () {
-    fetch("https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/test/beta_TPAR_v4.1.js").then(response => response.text()).then(script => eval(script));
+    fetch("https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.js").then(response => response.text()).then(script => eval(script));
   }, 10000);
