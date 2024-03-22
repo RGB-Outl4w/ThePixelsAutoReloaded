@@ -10,7 +10,7 @@ Paste the following command into the Telegram webview console (Ctrl + Shift + i 
 
 ```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js').then(response => response.text()).then(script => eval(script));```
 
-* (it is recommended to add "?123" after "...main.js" time to time to clear the cache, your link will look like: "..._main.js?123")
+* It is recommended to add `?123` after `...main.js` time to time to clear the cache, your link will look like: `..._main.js?123`
 
 ## What this script does:
 * Bypasses PC block by devs
