@@ -5,6 +5,9 @@
 # ⚠️ ATTENTION ⚠️
 Devs have recently stated that using an autoclicker OR a similar script is not safe! This probably means that those are now bannable. Use at your own risk.
 
+## ❗ Dev Note
+It is recommended to use this script with [**Telegram Desktop**](https://desktop.telegram.org/), as the **Telegram Web** can sometimes reject executing scripts and return an error. I do not provide support for any errors, encountered while trying to execute the script in **Telegram Web**. All the issues threads connected to Telegram Web will be closed.
+
 ## Installation (Execution):
 Paste the following command into the Telegram webview console (Ctrl + Shift + i -- to open):
 
@@ -16,8 +19,8 @@ Paste the following command into the Telegram webview console (Ctrl + Shift + i 
 * Bypasses PC block by devs
 * Clicks the button "Push Pixels"
 * Blocks annoying ad pop-ups mid-game
-* ~~When your balance eventually reaches 1000 coins, it buys a double pixel upgrade~~ (removed in main script, still in /releases/)
-* ~~When your balance eventually reaches 3000 coins (double pixel is profitable), it buys a triple pixel upgrade~~ (removed in main script, still in /releases/)
+* ~~When your balance eventually reaches 1000 coins, it buys a double pixel upgrade~~ (removed in main script, still can be found in `/releases/`)
+* ~~When your balance eventually reaches 3000 coins (double pixel is profitable), it buys a triple pixel upgrade~~ (removed in main script, still can be found in `/releases/`)
 
 # FAQ
 
