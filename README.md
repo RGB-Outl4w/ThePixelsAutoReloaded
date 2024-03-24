@@ -8,6 +8,9 @@ Devs have recently stated that using an autoclicker OR a similar script is not s
 ## ❗ Dev Note
 It is recommended to use this script with [**Telegram Desktop**](https://desktop.telegram.org/), as the **Telegram Web** can sometimes reject executing scripts and return an error. I do not provide support for any errors, encountered while trying to execute the script in **Telegram Web**. All the issues threads connected to **Telegram Web** will be closed.
 
+### 💖 Friendly Reminder
+You can support me on [boosty](https://boosty.to/rgboutlaw) if you wish (or find my work inspiring) <3
+
 ## Installation (Execution):
 Access the **Telegram** webview inspection console ([guide on how to do it](https://telegra.ph/How-to-open-webview-inspecting-window-console-03-23))
 
