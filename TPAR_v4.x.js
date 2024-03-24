@@ -10,7 +10,6 @@ var h = {
 
 window.monkeyPatch = h;
 
-unixTime = Date.now();
 
 document.querySelector("script").remove();
 document.getElementById("root").innerHTML = "";
