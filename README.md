@@ -39,4 +39,4 @@ Paste the following command into the command prompt:
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
 * ~~[v3.1] Sometimes the script can buy multiple of the same boosts instead of just one on execution~~ (Fixed in v3.2)
 * ~~[v4.0] Script can randomly give an error and stop working until you click OK in the pop-up window~~ (Fixed in v4.1)
-* [v4.1] Script works normally for a long time, but eventually the web app closes itself
+* [v4.1] Script works normally for a long time, but eventually the web app closes itself. Sadly, this is intended by the devs as a countermeasure against bots and autoclickers. **This will not stop us. Remain patient, for now.**
