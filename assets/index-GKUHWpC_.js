@@ -11705,26 +11705,26 @@ Don't stop\\! Let\\'s push next pixels to the moon вњЁ`
 }
   , BL = {
     home: "THE PIXELS",
-    squads: "РћС‚СЂСЏРґС‹",
-    squad: "РћС‚СЂСЏРґ",
-    newSquad: "РќРѕРІС‹Р№ РћС‚СЂСЏРґ",
-    referrals: "Р”СЂСѓР·СЊСЏ",
-    "mint-history": "РљРѕР»Р»РµРєС†РёСЏ",
-    shop: "Р‘СѓСЃС‚С‹",
-    stats: "РЎС‚Р°С‚РёСЃС‚РёРєР°",
-    streaks: "РЎС‚СЂРёРєРё"
+    squads: "РћС‚СЂСЏРґС‹", // Отряды
+    squad: "РћС‚СЂСЏРґ", // Отряд
+    newSquad: "РќРѕРІС‹Р№ РћС‚СЂСЏРґ", // Новый Отряд
+    referrals: "Р”СЂСѓР·СЊСЏ", // Дружба
+    "mint-history": "РљРѕР»Р»РµРєС†РёСЏ", // Коллекция
+    shop: "Р‘СѓСЃС‚С‹", // Бусты
+    stats: "РЎС‚Р°С‚РёСЃС‚РёРєР°", // Статистика
+    streaks: "РЎС‚СЂРёРєРё" // Стрики
 }
   , jL = {
-    hintCreate: "РЎРїРµСЂРІР° СЃРѕР·РґР°РґРёРј РћС‚СЂСЏРґ. Р’СЃС‚Р°РІСЊС‚Рµ СЃСЃС‹Р»РєСѓ РЅР° РїСѓР±Р»РёС‡РЅСѓСЋ РіСЂСѓРїРїСѓ РёР»Рё РєР°РЅР°Р» РІ РўРµР»РµРіСЂР°РјРµ, Р° Р·Р°С‚РµРј Р·Р°РіСЂСѓР·РёС‚Рµ РЅСѓР¶РЅСѓСЋ РєР°СЂС‚РёРЅРєСѓ.",
-    hintTarget: "РЎР°РјРѕРµ РІСЂРµРјСЏ РґРѕР±Р°РІРёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ-С†РµР»СЊ",
-    channelLink: "РЎСЃС‹Р»РєР° РЅР° РєР°РЅР°Р» РёР»Рё РіСЂСѓРїРїСѓ",
+    hintCreate: "РЎРїРµСЂРІР° СЃРѕР·РґР°РґРёРј РћС‚СЂСЏРґ. Р’СЃС‚Р°РІСЊС‚Рµ СЃСЃС‹Р»РєСѓ РЅР° РїСѓР±Р»РёС‡РЅСѓСЋ РіСЂСѓРїРїСѓ РёР»Рё РєР°РЅР°Р» РІ РўРµР»РµРіСЂР°РјРµ, Р° Р·Р°С‚РµРј Р·Р°РіСЂСѓР·РёС‚Рµ РЅСѓР¶РЅСѓСЋ РєР°СЂС‚РёРЅРєСѓ.", // Сперва создадим Отряд. Вставьте ссылку на публичную группу или канал в Телеграме, а затем загрузите нужную картинку.
+    hintTarget: "РЎР°РјРѕРµ РІСЂРµРјСЏ РґРѕР±Р°РІРёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ-С†РµР»СЊ", // Самое время добавить изображение-цель.
+    channelLink: "РЎСЃС‹Р»РєР° РЅР° РєР°РЅР°Р» РёР»Рё РіСЂСѓРїРїСѓ", // "Ссылка на канал или группу"
     channelLinkPlaceholder: "t.me/durov",
-    squadName: "РќР°Р·РІР°РЅРёРµ РћС‚СЂСЏРґР°",
-    addSquad: "РЎРѕР·РґР°С‚СЊ РћС‚СЂСЏРґ",
-    next: "Р”Р°Р»РµРµ",
-    placeImageBtn: "Р Р°Р·РјРµСЃС‚РёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ",
-    selectImage: "Р’С‹Р±СЂР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ",
-    addImage: "Р”РѕР±Р°РІРёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ",
+    squadName: "РќР°Р·РІР°РЅРёРµ РћС‚СЂСЏРґР°", // Название Отряда
+    addSquad: "РЎРѕР·РґР°С‚СЊ РћС‚СЂСЏРґ", // Создать Отряд
+    next: "Р”Р°Р»РµРµ", // Далее
+    placeImageBtn: "Р Р°Р·РјРµСЃС‚РёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ", // Разместить изображение
+    selectImage: "Р’С‹Р±СЂР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ", // Выбрать изображение
+    addImage: "Р”РѕР±Р°РІРёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ", // Добавить изображение
     imageTips: `РЎРѕРІРµС‚С‹:
 - PNG СЃ Р°Р»СЊС„Р°-РєР°РЅР°Р»РѕРј РїСЂРёРІРµС‚СЃС‚РІСѓРµС‚СЃСЏ
 - РџРѕРґРіРѕС‚РѕРІСЊС‚Рµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РЅСѓР¶РЅРѕРіРѕ СЂР°Р·РјРµСЂР° 16x16, 32x32, 64x64, 128x128, 256x256, 512x512`,
@@ -25909,7 +25909,7 @@ const RG = t=>c.createElement("svg", {
                     })
                 }), w.jsxs(t9, {
                     $editMode: !0,
-                    children: [s("ui.target_add"), "В #", (a.length + 1).toString().padStart(2, "0"), "В >"]
+                    children: [s("ui.target_add"), " #", (a.length + 1).toString().padStart(2, "0"), " >"]
                 })]
             }, "add-new")]
         })
@@ -26313,7 +26313,7 @@ const RG = t=>c.createElement("svg", {
                     to: i.href,
                     children: i.label
                 }, s), s !== n.length - 1 && w.jsx(w.Fragment, {
-                    children: "В >В "
+                    children: " > "
                 })]
             }, s))
         })
@@ -26668,7 +26668,7 @@ const RG = t=>c.createElement("svg", {
     ;
     return w.jsxs(w.Fragment, {
         children: [i ? w.jsx(z5, {}) : w.jsxs(z5, {
-            children: [">В ", w.jsx(hq, {
+            children: ["> ", w.jsx(hq, {
                 text: s("newSquad.hintCreate")
             })]
         }), w.jsx(_q, {
@@ -29391,7 +29391,7 @@ function Pt(t, e=r=>r) {
         deser: ([r])=>e(_Y(r))
     }
 }
-const CY = "В "
+const CY = " "
   , Kk = `[ ${CY}]`
   , Jk = new RegExp(Kk,"g");
 function TY(t) {
@@ -64417,7 +64417,7 @@ t > e ? t : e)
             onTargetOffsetChange: S
         }) : w.jsxs(w.Fragment, {
             children: [w.jsxs(z5, {
-                children: [">В ", o("newSquad.hintTarget")]
+                children: ["> ", o("newSquad.hintTarget")]
             }), w.jsx(iQ, {
                 onUpload: b
             })]
@@ -67712,7 +67712,7 @@ const cle = ["#fac02d", "#d4af37", "#a67c00", "#ffb13b", "#806c2e", "#b76e79"]
             duration: 200,
             value: i,
             format: a=>Tn(Math.round(a))
-        }), "В PXL"]
+        }), " PXL"]
     })
 }
 )
@@ -68250,7 +68250,7 @@ const Ale = ()=>{
             children: [w.jsx(BT, {
                 onClick: C,
                 children: w.jsxs("span", {
-                    children: [Tn(S), " ", o("ui.players"), "В >>"]
+                    children: [Tn(S), " ", o("ui.players"), " >>"]
                 })
             }), w.jsxs(Lae, {
                 onClick: H,
@@ -73803,9 +73803,9 @@ const Che = k.div.withConfig({
         children: [w.jsxs("span", {
             children: ["#", e.id]
         }), n === pc.OnMarket && w.jsx("span", {
-            children: "В |В NFT"
+            children: " | NFT"
         }), n === pc.Active && w.jsx("span", {
-            children: "В |В Active"
+            children: " | Active"
         })]
     })
 }
@@ -73843,7 +73843,7 @@ const Che = k.div.withConfig({
                         })
                     }), "/10"]
                 }), w.jsx(uhe, {
-                    children: "В NFT Sale Countdown Stat"
+                    children: " NFT Sale Countdown Stat"
                 }), w.jsxs(hhe, {
                     children: [w.jsx(fhe, {}), w.jsx("span", {
                         children: Yn(o.playerPXL || i.coins)
@@ -73889,7 +73889,7 @@ const Che = k.div.withConfig({
                         children: [w.jsx("span", {
                             children: o.playerPixels
                         }), w.jsxs("sup", {
-                            children: ["В /В ", o.overallPixels]
+                            children: [" / ", o.overallPixels]
                         })]
                     }), w.jsx(xA, {
                         children: "Your Pixels"
@@ -73897,7 +73897,7 @@ const Che = k.div.withConfig({
                 }), w.jsxs(vA, {
                     children: [w.jsxs(wA, {
                         children: [w.jsxs("sup", {
-                            children: ["~$", f.toFixed(2), "В "]
+                            children: ["~$", f.toFixed(2), " "]
                         }), w.jsxs("span", {
                             children: [p.toFixed(2), " TON"]
                         })]
