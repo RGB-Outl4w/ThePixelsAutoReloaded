@@ -25,7 +25,7 @@ async function checkAndUpdate() {
             await wait(2500);
           }
         } else {
-          await wait(250);
+          await wait(2500);
         }
       } else {
         // On subsequent attempts, click the button if available and reset attempts
@@ -33,7 +33,7 @@ async function checkAndUpdate() {
         if (button && !button.disabled) {
           button.click();
           attempts = 0;
-          await wait(1500);
+          await wait(2500);
           
           // Wait for text to appear
           const searchText = "% >";
@@ -42,7 +42,7 @@ async function checkAndUpdate() {
             await wait(3700);
           }
         } else {
-          await wait(250);
+          await wait(2500);
         }
       }
       attempts++;
