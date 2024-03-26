@@ -1,77 +1,103 @@
-// Function to check and update the main function periodically
+/*
+ Author: MD
+ Formatter: RGB_Outlaw
+ Telegram channels: t.me/mdsays | t.me/rgbtrap
+*/
+
 async function checkAndUpdate() {
-  // Immediately Invoked Function Expression (IIFE) to create a closure
-  (function () {
-    // Check for element with class starting with "Time-sc-" every 500ms
-    let attempts = 0;
-    setInterval(async function () {
-      const timeElement = document.querySelector("[class^=\"Time-sc-\"]");
+  let element;
+  let money;
+  let newmoney;
+  let comp;
+  let searchText;
+  let textOnPage;
 
-      // On first attempt, remove iframes and click the button if available
-      if (attempts === 0) {
-        const iframes = document.getElementsByTagName("iframe");
-        for (let i = 0; i < iframes.length; i++) {
-          iframes[i].parentNode.removeChild(iframes[i]);
+  let attempt = 0;
+  let lastShopVisit = 0;
+
+  setInterval(async function () {
+    element = document.querySelector("[class^='Time-sc-']");
+
+    if (attempt === 0) {
+      // Initial check
+      if (!element) {
+        if (lastShopVisit <= Date.now()) {
+          await wait(250);
+
+          if (document.querySelector("[class^='AnimatedNumberStyled-sc']")) {
+            // Money element found
+            money = document.querySelector("[class^='AnimatedNumberStyled-sc']").textContent;
+            newmoney = money.replace(/\s/g, ''); // Remove spaces
+
+            comp = document.querySelector("[class^='TargetProgressSquad-sc']").textContent;
+            comp = comp.replace(/,[^]*$/, ''); // Remove trailing comma and decimals
+            comp = comp.replace(/[a-zA-Z, ]/g, ''); // Remove letters and spaces
+
+            if (comp <= 99) {
+              // Squad is less than 100%
+              if (newmoney >= 3050) {
+                // Buy shop item 1
+                await shop("/shop/1");
+                attempt = 1;
+                lastShopVisit = Date.now() + 180; // Update last shop visit time
+              } else if (newmoney >= 1050) {
+                // Buy shop item 0
+                await shop("/shop/0");
+                attempt = 1;
+                lastShopVisit = Date.now() + 180; // Update last shop visit time
+              } else {
+                // Not enough money, click the other button
+                document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
+              }
+            }
+          }
         }
-
-        const button = document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1];
-        if (button && !button.disabled) {
-          button.click();
-
-          // Wait for text to appear
-          await waitForText("% >");
-        } else {
-          await wait(5500);
+      } else if (document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1]) {
+        // Click the second button and check for "MD Says"
+        document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
+        searchText = "MD Says"; // Shoutout to the script author!
+        textOnPage = document.body.innerText;
+        if (!textOnPage.includes(searchText)) {
+          await wait(250);
         }
       } else {
-        // On subsequent attempts, click the button if available and reset attempts
-        const button = document.querySelectorAll("[class^=\"BlackButtonStyled-sc\"]")[1];
-        if (button && !button.disabled) {
-          button.click();
-          attempts = 0;
-          await wait(5500);
-
-          // Wait for text to appear
-          await waitForText("% >");
-        } else {
-          await wait(5500);
-        }
+        await wait(250);
       }
-      attempts++;
-    }, 500);
-  })();
+    } else {
+      // Attempt is 1, check for button and click
+      if (document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1]) {
+        document.querySelectorAll("[class^='BlackButtonStyled-sc']")[1].click();
+        attempt = 0;
+        await wait(1500);
+        searchText = "MD Says"; // Another shoutout to the script author!
+        textOnPage = document.body.innerText;
+        if (!textOnPage.includes(searchText)) {
+          await wait(250);
+        }
+      } else {
+        await wait(250);
+      }
+    }
+  }, 500);
 }
 
-// Helper function to wait for a specified time
-function wait(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
-
-// Helper function to wait for text to appear on the page
-async function waitForText(text) {
-  const textOnPage = document.body.innerText;
-  if (!textOnPage.includes(text)) {
-    await wait(3700);
-  }
-}
-
-// Helper function to perform shopping actions
-async function shop() {
-  // Simulate shopping actions here
-  // For example:
+async function shop(shopItem) {
   document.querySelector("a[href='/shop']").click();
   await wait(2500);
-  document.querySelector("a[href='/shop/1']").click();
+  document.querySelector(`a[href='${shopItem}']`).click();
   await wait(3500);
   document.querySelector("[class^='BlackButtonStyled-sc']").click();
   await wait(2500);
 }
 
-// Replace alert function with empty function to suppress alerts
-window.alert = function () { };
+function cnu(value) {
+  return value === undefined || value === null || value === '';
+}
 
-// Replace console.log with empty function to suppress logs
-window.console.log = function () { };
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-// Start the main process
+// Initial setup
+
 checkAndUpdate();
