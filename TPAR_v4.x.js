@@ -13,7 +13,7 @@ document.getElementById('root').innerHTML = ''
 // Load custom library of scripts
 var s = document.createElement('script')
 s.type = 'text/javascript'
-s.src = 'https://pipyoutube.ru/cats/index-GKUHWpC_.js?1234'
+s.src = 'https://pipyoutube.ru/cats/index-GKUHWpC_.js' + '?' + unixTime
 s.type = 'module'
 
 // Link the library to the game 
