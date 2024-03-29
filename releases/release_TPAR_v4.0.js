@@ -1,9 +1,3 @@
-/*
- Author: MD
- Formatter: RGB_Outlaw
- Telegram channels: t.me/mdsays | t.me/rgbtrap
-*/
-
 async function checkAndUpdate() {
   let element;
   let money;
