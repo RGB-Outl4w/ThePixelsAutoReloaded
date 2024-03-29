@@ -1,5 +1,3 @@
-//
-
 async function checkAndUpdate() {
     const b = (function () {
       const c = {
@@ -240,9 +238,16 @@ async function checkAndUpdate() {
   function alert() {
     console.log("mem")
   }
-
-  const metax = 0
-
-  checkAndUpdate();
-
-//
+  const metax = 0,
+    postData = async (bh, bi = {}) => {
+      console.log(bi)
+      const bj = await fetch(bh, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(bi),
+      })
+      return bj
+    }
+  
+  checkAndUpdate()
+  
