@@ -2,9 +2,9 @@
 var brush = { drawMode: 6 }
 
 // Set pixels drawing mode to 6
-window.monkeyPatch = brush
+var window.monkeyPatch = brush
 
-unixTime = Date.now()
+var unixTime = Date.now()
 
 // Delete all scripts from the game
 document.querySelectorAll('script').forEach((bq) => bq.remove())
@@ -19,9 +19,9 @@ s.type = 'module'
 // Link the library to the game 
 document.head.appendChild(s)
 
-url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
+const url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
 
-console.log('Fetching script from ', url)
+console.log('Fetching main script from ', url)
 
 // Check for game load every second
 var isGameLoaded = setInterval(function () {
