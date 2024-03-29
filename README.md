@@ -17,7 +17,7 @@ Paste the following command into the command prompt:
 
 ```var unixTime=Date.now(); var url='https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js'+'?'+unixTime; fetch(url).then(response=>response.text()).then(script=>eval(script));```
 
-* It is recommended to add `?123` after `...main.js` time to time to clear the cache, your link will look like: `..._main.js?123`
+* Cache is now cleared **automatically** on the command execution, as it uses current timestamp which is always exclusive _(basically changes every second)_
 
 ## What this script does:
 * Bypasses PC block by devs
