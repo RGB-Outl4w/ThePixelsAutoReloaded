@@ -15,6 +15,8 @@ s.type = 'module'
 
 document.head.appendChild(s)
 
+url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
+
 setTimeout(function () {
-    fetch("https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.js").then(response => response.text()).then(script => eval(script));
+    fetch(url).then(response => response.text()).then(script => eval(script));
 }, 10000)
