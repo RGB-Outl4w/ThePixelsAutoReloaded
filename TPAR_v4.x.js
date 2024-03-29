@@ -1,8 +1,9 @@
-// Introduce brush variable
+/* Introduce brush variable
 var brush = { drawMode: 6 }
 
 // Set pixels drawing mode to 6
 var window.monkeyPatch = brush
+*/
 
 var unixTime = Date.now()
 
