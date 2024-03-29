@@ -1,4 +1,4 @@
-unixTime = Date.now();
+var unixTime = Date.now();
 
 document.querySelectorAll('script').forEach((func) => func.remove())
 document.getElementById('root').innerHTML = ''
