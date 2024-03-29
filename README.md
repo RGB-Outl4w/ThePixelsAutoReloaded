@@ -15,7 +15,7 @@ Access the **Telegram** webview inspection console ([guide on how to do it](http
 
 Paste the following command into the command prompt:
 
-```fetch('https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js').then(response => response.text()).then(script => eval(script));```
+```var unixTime=Date.now(); var url='https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js'+'?'+unixTime; fetch(url).then(response=>response.text()).then(script=>eval(script));```
 
 * It is recommended to add `?123` after `...main.js` time to time to clear the cache, your link will look like: `..._main.js?123`
 
