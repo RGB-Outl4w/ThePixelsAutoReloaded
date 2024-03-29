@@ -1,5 +1,5 @@
 // Introduce brush variable
-var brush = { drawmode: 6 }
+var brush = { drawMode: 6 }
 
 // Set pixels drawing mode to 6
 window.monkeyPatch = brush
