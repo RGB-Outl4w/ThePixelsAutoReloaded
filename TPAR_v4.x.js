@@ -22,7 +22,15 @@ document.head.appendChild(s)
 
 url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
 
-// Launch main script
-setTimeout(function () {
-    fetch(url).then(response => response.text()).then(script => eval(script));
-}, 10000)
+// Check for game load every second
+var isGameLoaded = setInterval(function () {
+  if (document.querySelector('canvas')) {
+    // Fetch and execute game script after delay
+    setTimeout(function () {
+      fetch(url)
+        .then(response => response.text())
+        .then(text => eval(text));
+    }, 1252);
+    clearInterval(isGameLoaded);
+  }
+}, 1000);
