@@ -1,8 +1,4 @@
-/*
- Author: MD
- Formatter: RGB_Outlaw
- Telegram channels: t.me/mdsays | t.me/rgbtrap
-*/
+//
 
 var at = {};
 
@@ -24,3 +20,5 @@ document.head.appendChild(s);
 setTimeout(function () {
     fetch("https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.js?", unixTime).then(response => response.text()).then(script => eval(script));
 }, 10000);
+
+//
