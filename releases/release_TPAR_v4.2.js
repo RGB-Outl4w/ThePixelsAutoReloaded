@@ -122,11 +122,11 @@ async function checkAndUpdate() {
         ba = 0
       setInterval(async function () {
         element = document.querySelector("[class^=\"Time-sc-\"]")
-        if (az == 0) {
-          var bb = document.getElementsByTagName("iframe")
-          for (var bc = 0; bc < bb.length; bc++) {
-            bb[bc].parentNode.removeChild(bb[bc])
-          }
+        if (az === 0) {
+          const iframes = document.getElementsByTagName("iframe");
+        for (let i = 0; i < iframes.length; i++) {
+          iframes[i].parentNode.removeChild(iframes[i]);
+        }
           if (cnu(element)) {
             if (ba < Date.now()) {
               ba = Date.now() + 180
