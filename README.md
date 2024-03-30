@@ -15,7 +15,9 @@ Access the **Telegram** webview inspection console ([guide on how to do it](http
 
 Paste the following command into the command prompt:
 
-```var unixTime=Date.now(); var url='https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js'+'?'+unixTime; fetch(url).then(response=>response.text()).then(script=>eval(script));```
+```javascript
+var unixTime=Date.now(); var url='https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/TPAR_main.js'+'?'+unixTime; fetch(url).then(response=>response.text()).then(script=>eval(script));
+```
 
 * Cache is now cleared **automatically** on the command execution, as it uses current timestamp which is always exclusive _(basically changes every second)_
 
