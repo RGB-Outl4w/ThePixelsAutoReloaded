@@ -67979,14 +67979,12 @@ class ble {
         this.onPostMessage = a=>{
             this.handlePostMessage(a)
         }
-        ,
-        window.addEventListener("message", this.onPostMessage)
     }
     showRewardedVideo(e) {
-        return this.show("video", e)
+
     }
     showBottomBanner(e) {
-        return this.show("banner", e)
+
     }
     destroy() {
         window.removeEventListener("message", this.onPostMessage),
@@ -67996,48 +67994,6 @@ class ble {
     }
     show(e="video", r) {
         return Ele(this, void 0, void 0, function*() {
-            const n = ()=>{}
-              , {onNotFound: i=n, onOpen: s=n, onReward: a=n, onClose: o=n, onError: l=n} = r || {};
-            try {
-                const u = {
-                    width: window.innerWidth,
-                    height: e === "video" ? window.innerHeight : 100
-                }
-                  , f = {
-                    adType: e,
-                    publisherKey: this.publisherKey,
-                    device: this.device,
-                    user: this.user,
-                    placement: u,
-                    miniAppData: this.miniAppData
-                }
-                  , p = localStorage.getItem("tgAdsMediationDebug");
-                p && (f.debug = JSON.parse(p));
-                const m = yield fetch(`${this.sspUrl}/api/v${this.apiVersion}/ad`, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(f)
-                });
-                if (m.status !== 200)
-                    return console.error("Failed to fetch an ad."),
-                    i(),
-                    !1;
-                const y = yield m.json()
-                  , v = this.createPlacement(y);
-                return v.srcdoc = y.ad.markup,
-                document.body.appendChild(v),
-                s(),
-                this.subscribers[y.id] = {
-                    onReward: a,
-                    onClose: o
-                },
-                !0
-            } catch (u) {
-                return l(u),
-                !1
-            }
         })
     }
     createPlacement(e) {
@@ -68104,7 +68060,7 @@ Y2.Ads = ble;
 }
 )(OR);
 const _le = new OR.Ads({
-    key: "coLRC8*aVHTo^XXaHR#p!@rYa",
+    key: "huy",
     test: !1
 })
   , Sle = ()=>new Promise(t=>{
@@ -68211,7 +68167,6 @@ const Ale = ()=>{
                 await ao(2e3),
                 await ((R = r.current) == null ? void 0 : R.animateOut()),
                 Wt("push_pixel_success"),
-                te.showRewardedVideo && await Sle(),
                 _(te)
             } catch (j) {
                 Wt("push_pixel_failed"),
