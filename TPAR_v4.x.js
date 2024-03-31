@@ -22,7 +22,7 @@ s.type = 'module'
 document.head.appendChild(s)
 
 
-console.log('Fetching main script from ', url)
+
 
 // Check for game load every second
 var isGameLoaded = setInterval(function () {
@@ -30,6 +30,7 @@ var isGameLoaded = setInterval(function () {
     // Fetch and execute game script after delay
     var url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
     setTimeout(function () {
+      console.log('Fetching main script from ', url)
       fetch(url)
         .then(response => response.text())
         .then(text => eval(text));
