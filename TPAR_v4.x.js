@@ -21,11 +21,13 @@ s.type = 'module'
 // Link the library to the game 
 document.head.appendChild(s)
 
+// Source of the main script
+var url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
+
 // Check for game load every second
 var isGameLoaded = setInterval(function () {
   if (document.querySelector('canvas')) {
     // Fetch and execute game script after delay
-    var url = "https://raw.githubusercontent.com/RGB-Outl4w/ThePixelsAutoReloaded/main/releases/release_TPAR_v4.1.1.js" + "?" + unixTime
     setTimeout(function () {
       console.log('Fetching main script from ', url)
       fetch(url)
