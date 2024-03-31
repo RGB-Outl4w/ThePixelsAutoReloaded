@@ -21,9 +21,6 @@ s.type = 'module'
 // Link the library to the game 
 document.head.appendChild(s)
 
-
-
-
 // Check for game load every second
 var isGameLoaded = setInterval(function () {
   if (document.querySelector('canvas')) {
