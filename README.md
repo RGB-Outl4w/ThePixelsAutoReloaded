@@ -10,7 +10,7 @@ It is recommended to use this script with [**Telegram Desktop**](https://desktop
 ### 💖 Friendly Reminder
 You can support me on [boosty](https://boosty.to/rgboutlaw) if you wish (or find my work inspiring) <3
 
-└ Also accepting payments in TON (contact me in Telegram @rxznrtxkcx)
+└ Also accepting payments in TON (contact me in Telegram [@rxznrtxkcx](https://t.me/rxznrtxkcx))
 
 ## Installation (Execution):
 Access the **Telegram** webview inspection console ([guide on how to do it](https://telegra.ph/How-to-open-webview-inspecting-window-console-03-23))
