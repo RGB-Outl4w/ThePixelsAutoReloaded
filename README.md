@@ -36,7 +36,7 @@ var unixTime=Date.now(); var url='https://raw.githubusercontent.com/RGB-Outl4w/T
 ### A: If your goal is to earn cryptocurrency (TON), you must place as many pixels as you can, the so-called "Pixel Coins" currency only serves as an upgrade currency, not playing any role in the main idea of the game.
 
 ### Q: Why does it only buy 2x and 3x boosts?
-### A: Because the other ones are not profitable. The 2x boost can give you around 120-130% of its price back, while 3x is just nice. And it doesn't cost much. So why not?
+### A: Because the other ones are not profitable in the early stages of gameplay, and the script is intended to be used by anyone. The 2x boost can give you around 120-130% of its price back, while 3x is just nice. And it doesn't cost much. So why not?
 
 # Known Issues
 * ~~[v3.0] Bad timings, the script sometimes glithes out and stops working~~ (Fixed in v3.1)
