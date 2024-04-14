@@ -1,6 +1,8 @@
 # ThePixelsAuto: Reloaded
 ![ThePixelsLogo](https://mirror.xyz/_next/image?url=https%3A%2F%2Fimages.mirror-media.xyz%2Fpublication-images%2FmeaTxrGmWq8Yt_3FTIsoH.png&w=3840&q=75)
 
+# ✨ Welcome to the "Reloaded" version of "ThePixelsAuto" project! Same author, less bugs, more profit. 3x times better! ✨
+
 # ⚠️ ATTENTION ⚠️
 Devs havestated that using an autoclicker OR a similar script is not safe! This probably means that using those is now bannable or at least punishable. Use at your own risk.
 
