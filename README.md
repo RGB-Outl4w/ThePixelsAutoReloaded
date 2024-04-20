@@ -4,7 +4,7 @@
 # ✨ Welcome to the "Reloaded" version of "ThePixelsAuto" project! Same author, less bugs, more profit. 3x times better! ✨
 
 # ⚠️ ATTENTION ⚠️
-Devs havestated that using an autoclicker OR a similar script is not safe! This probably means that using those is now bannable or at least punishable. Use at your own risk.
+Devs have stated that using an autoclicker OR a similar script is not safe! This probably means that using those is now bannable or at least punishable. Use at your own risk.
 
 ## ❗ Dev Note
 It is recommended to use this script with [**Telegram Desktop**](https://desktop.telegram.org/), as the **Telegram Web** can sometimes reject executing scripts and return an error. I do not provide support for any errors, encountered while trying to execute the script in **Telegram Web**. All the issues threads connected to **Telegram Web** will be closed.
